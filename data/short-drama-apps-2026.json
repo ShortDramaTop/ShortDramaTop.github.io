@@ -1,0 +1,233 @@
+[
+  {
+    "app": "DramaBox",
+    "ios_rating": null,
+    "ios_reviews": null,
+    "play_rating": 4.6,
+    "play_reviews": null,
+    "weekly_price_usd": 5.99,
+    "has_free_episodes": true,
+    "platforms": ["iOS", "Android", "Web"],
+    "snapshot_date": "2026-10-02"
+  },
+  {
+    "app": "ReelShort",
+    "ios_rating": 4.7,
+    "ios_reviews": null,
+    "play_rating": 4.2,
+    "play_reviews": null,
+    "weekly_price_usd": 19.99,
+    "has_free_episodes": true,
+    "platforms": ["iOS", "Android", "Web"],
+    "snapshot_date": "2026-10-02"
+  },
+  {
+    "app": "ShortMax",
+    "ios_rating": null,
+    "ios_reviews": null,
+    "play_rating": 4.5,
+    "play_reviews": null,
+    "weekly_price_usd": 19.99,
+    "has_free_episodes": true,
+    "platforms": ["iOS", "Android", "Web", "TV"],
+    "snapshot_date": "2026-10-02"
+  },
+  {
+    "app": "NetShort",
+    "ios_rating": 4.7,
+    "ios_reviews": null,
+    "play_rating": 4.6,
+    "play_reviews": null,
+    "weekly_price_usd": 19.99,
+    "has_free_episodes": true,
+    "platforms": ["iOS", "Android", "Web"],
+    "snapshot_date": "2026-10-02"
+  },
+  {
+    "app": "GoodShort",
+    "ios_rating": null,
+    "ios_reviews": null,
+    "play_rating": 4.9,
+    "play_reviews": null,
+    "weekly_price_usd": null,
+    "has_free_episodes": true,
+    "platforms": ["iOS", "Android", "Web"],
+    "snapshot_date": "2026-10-02"
+  },
+  {
+    "app": "KalosTV",
+    "ios_rating": null,
+    "ios_reviews": null,
+    "play_rating": null,
+    "play_reviews": null,
+    "weekly_price_usd": null,
+    "has_free_episodes": true,
+    "platforms": ["iOS", "Android", "Web"],
+    "snapshot_date": "2026-10-02"
+  },
+  {
+    "app": "FlickReels",
+    "ios_rating": null,
+    "ios_reviews": null,
+    "play_rating": null,
+    "play_reviews": null,
+    "weekly_price_usd": null,
+    "has_free_episodes": true,
+    "platforms": ["iOS", "Android"],
+    "snapshot_date": "2026-10-02"
+  },
+  {
+    "app": "FlareFlow",
+    "ios_rating": 4.7,
+    "ios_reviews": null,
+    "play_rating": 4.2,
+    "play_reviews": null,
+    "weekly_price_usd": 19.99,
+    "has_free_episodes": true,
+    "platforms": ["iOS", "Android", "Google TV"],
+    "snapshot_date": "2026-10-02"
+  },
+  {
+    "app": "Playlet",
+    "ios_rating": null,
+    "ios_reviews": null,
+    "play_rating": null,
+    "play_reviews": null,
+    "weekly_price_usd": null,
+    "has_free_episodes": true,
+    "platforms": ["iOS", "Android"],
+    "snapshot_date": "2026-10-02"
+  },
+  {
+    "app": "StardustTV",
+    "ios_rating": 4.7,
+    "ios_reviews": null,
+    "play_rating": null,
+    "play_reviews": null,
+    "weekly_price_usd": null,
+    "has_free_episodes": true,
+    "platforms": ["iOS", "Android", "Web"],
+    "snapshot_date": "2026-10-02"
+  },
+  {
+    "app": "MoboReels",
+    "ios_rating": 4.56,
+    "ios_reviews": 38700,
+    "play_rating": null,
+    "play_reviews": null,
+    "weekly_price_usd": null,
+    "has_free_episodes": true,
+    "platforms": ["iOS", "Android"],
+    "snapshot_date": "2026-10-02"
+  },
+  {
+    "app": "Veloria",
+    "ios_rating": null,
+    "ios_reviews": null,
+    "play_rating": null,
+    "play_reviews": null,
+    "weekly_price_usd": null,
+    "has_free_episodes": true,
+    "platforms": ["iOS", "Android"],
+    "snapshot_date": "2026-10-02"
+  },
+  {
+    "app": "StarShort",
+    "ios_rating": null,
+    "ios_reviews": null,
+    "play_rating": null,
+    "play_reviews": null,
+    "weekly_price_usd": null,
+    "has_free_episodes": true,
+    "platforms": ["iOS", "Android"],
+    "snapshot_date": "2026-10-02"
+  },
+  {
+    "app": "TopShort",
+    "ios_rating": null,
+    "ios_reviews": null,
+    "play_rating": null,
+    "play_reviews": null,
+    "weekly_price_usd": null,
+    "has_free_episodes": true,
+    "platforms": ["iOS", "Android"],
+    "snapshot_date": "2026-10-02"
+  },
+  {
+    "app": "HoneyReels",
+    "ios_rating": null,
+    "ios_reviews": null,
+    "play_rating": null,
+    "play_reviews": null,
+    "weekly_price_usd": 14.99,
+    "has_free_episodes": true,
+    "platforms": ["iOS", "Android"],
+    "snapshot_date": "2026-10-02"
+  },
+  {
+    "app": "Sereal+",
+    "ios_rating": 4.5,
+    "ios_reviews": null,
+    "play_rating": 3.3,
+    "play_reviews": null,
+    "weekly_price_usd": 12.99,
+    "has_free_episodes": true,
+    "platforms": ["iOS", "Android", "Web"],
+    "snapshot_date": "2026-10-02"
+  },
+  {
+    "app": "TouchShort",
+    "ios_rating": 4.6,
+    "ios_reviews": null,
+    "play_rating": 4.3,
+    "play_reviews": null,
+    "weekly_price_usd": 9.99,
+    "has_free_episodes": true,
+    "platforms": ["iOS", "Android"],
+    "snapshot_date": "2026-10-02"
+  },
+  {
+    "app": "Footage",
+    "ios_rating": null,
+    "ios_reviews": null,
+    "play_rating": null,
+    "play_reviews": null,
+    "weekly_price_usd": null,
+    "has_free_episodes": true,
+    "platforms": ["iOS", "Android"],
+    "snapshot_date": "2026-10-02"
+  },
+  {
+    "app": "SagaBox",
+    "ios_rating": null,
+    "ios_reviews": null,
+    "play_rating": null,
+    "play_reviews": null,
+    "weekly_price_usd": 2.89,
+    "has_free_episodes": true,
+    "platforms": ["Web"],
+    "snapshot_date": "2026-10-02"
+  },
+  {
+    "app": "ShortPeak",
+    "ios_rating": null,
+    "ios_reviews": null,
+    "play_rating": null,
+    "play_reviews": null,
+    "weekly_price_usd": null,
+    "has_free_episodes": null,
+    "platforms": ["Web"],
+    "snapshot_date": "2026-10-02"
+  },
+  {
+    "app": "YourChannel",
+    "ios_rating": null,
+    "ios_reviews": null,
+    "play_rating": null,
+    "play_reviews": null,
+    "weekly_price_usd": null,
+    "has_free_episodes": true,
+    "platforms": ["Web"],
+    "snapshot_date": "2026-10-02"
+  }
+]

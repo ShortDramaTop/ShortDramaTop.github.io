@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Short Drama Apps: Open Dataset (2026) — prices, ratings, availability</title>
+<meta name="description" content="A free, openly licensed dataset of vertical short-drama apps: store ratings, coin and subscription pricing, platforms and availability. Data compiled and first published by ShortDramaTop.">
+<link rel="canonical" href="https://shortdramatop.github.io/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<style>
+  :root{ --ink:#161616; --muted:#5a5a5a; --line:#e7e4df; --bg:#ffffff; --accent:#1f6f54; --chip:#f2f6f4; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  .wrap{max-width:760px;margin:0 auto;padding:28px 18px 64px}
+  header{border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:28px;display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+  header .brand{font-weight:700;letter-spacing:.2px}
+  header .brand span{color:var(--accent)}
+  header nav a{color:var(--muted);text-decoration:none;font-size:14px;margin-inline-start:14px}
+  header nav a:hover{color:var(--accent)}
+  h1{font-size:30px;line-height:1.25;margin:10px 0 6px}
+  .sub{color:var(--muted);font-size:15px;margin-bottom:28px}
+  h2{font-size:21px;margin:34px 0 10px}
+  p{margin:0 0 16px}
+  a{color:var(--accent)}
+  .note{background:var(--chip);border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-size:15px;color:var(--muted)}
+  table{border-collapse:collapse;width:100%;font-size:14.5px;margin:14px 0}
+  caption{caption-side:top;text-align:start;color:var(--muted);font-size:13px;margin-bottom:6px}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:start}
+  th{background:var(--chip);font-weight:600}
+  .files a{display:inline-block;margin-inline-end:14px}
+  footer{border-top:1px solid var(--line);margin-top:40px;padding-top:16px;color:var(--muted);font-size:14px}
+  .src{background:#fbfaf7;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:14px 16px;margin:22px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">Short<span>Drama</span>Top · Open Data</div>
+    <nav>
+      <a href="https://shortdramatop.com/">Main site</a>
+      <a href="#dataset">Dataset</a>
+      <a href="#method">Method</a>
+    </nav>
+  </header>
+
+  <h1>Short drama apps in 2026: an open dataset you can actually reuse</h1>
+  <p class="sub">Compiled and first published by <a href="https://shortdramatop.com/">ShortDramaTop</a> · Updated monthly · Licensed CC BY 4.0</p>
+
+  <div class="src">
+    <strong>Primary source.</strong> The full analysis, scoring and per-app reviews live on the main site:
+    <a href="https://shortdramatop.com/best/short-drama-app-demand-report-2026.html">the ShortDramaTop demand report</a>.
+    This repository is the openly licensed, machine-readable copy of that data. If you use it, please credit
+    <a href="https://shortdramatop.com/">ShortDramaTop (shortdramatop.com)</a>.
+  </div>
+
+  <p>Vertical short dramas went from a niche curiosity to a category with dozens of competing apps in about two years. Most write-ups about them are app-store screenshots and affiliate buttons. What almost nobody publishes is the boring-but-useful part: a clean table you can sort, filter and cite. So we made one.</p>
+
+  <p>We track the apps people actually search for — DramaBox, ReelShort, ShortMax, NetShort, GoodShort and the rest of the pack — and record the handful of fields that decide which one a viewer should install: how it's rated in the stores, what a week of coins or a subscription really costs, whether it works on a given platform, and whether it's even available in a user's country. The numbers move, so we refresh them every month and keep the previous snapshots.</p>
+
+  <h2 id="dataset">What's in the dataset</h2>
+  <p>Each row is one app. Each monthly snapshot is a separate file, so you can compare how pricing and ratings drift over time. The fields:</p>
+  <table>
+    <caption>Fields in short-drama-apps-2026.csv / .json</caption>
+    <thead><tr><th>Field</th><th>Meaning</th></tr></thead>
+    <tbody>
+      <tr><td>app</td><td>App name (e.g. DramaBox)</td></tr>
+      <tr><td>ios_rating / play_rating</td><td>Average store rating at snapshot date</td></tr>
+      <tr><td>ios_reviews / play_reviews</td><td>Number of ratings behind that average</td></tr>
+      <tr><td>weekly_price_usd</td><td>Cost of the main weekly plan, in USD</td></tr>
+      <tr><td>has_free_episodes</td><td>Whether the app offers genuinely free episodes</td></tr>
+      <tr><td>platforms</td><td>iOS, Android, Web, TV</td></tr>
+      <tr><td>snapshot_date</td><td>Date the values were read from the stores</td></tr>
+    </tbody>
+  </table>
+
+  <div class="note">
+    The numeric values in the current files are populated from the ShortDramaTop monthly report. Treat the report as the
+    authoritative version; this copy exists so the data is easy to download and reuse under an open licence.
+  </div>
+
+  <h2>Download</h2>
+  <p class="files">
+    <a href="data/short-drama-apps-2026.csv">short-drama-apps-2026.csv</a>
+    <a href="data/short-drama-apps-2026.json">short-drama-apps-2026.json</a>
+  </p>
+
+  <h2 id="method">How the data is collected</h2>
+  <p>Ratings and review counts come straight from the public Apple App Store and Google Play listings, read one app at a time on the snapshot date. Prices are taken from each app's in-app purchase screen and converted to USD where needed. Availability is checked per store front. We don't install-and-guess: every figure traces back to a store listing or an official help page, and the date is recorded alongside it.</p>
+  <p>What we deliberately leave out is anything we can't verify — invented user counts, "tested by our team" claims without receipts, or star ratings we made up. If a value isn't confirmable, it's blank, not fabricated. The scoring model that turns these raw numbers into rankings is documented on the main site, so you can disagree with the weighting and still trust the inputs.</p>
+
+  <h2>Using and citing it</h2>
+  <p>The dataset is released under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a>. You're free to copy it, chart it, or build on it — including commercially — as long as you credit the source. The required attribution is a visible line with a link: <em>“Data: ShortDramaTop, shortdramatop.com”</em>.</p>
+  <p>Writing a round-up and want the per-app reviews, pricing breakdowns or the full methodology? Those live on the main site: the <a href="https://shortdramatop.com/">ShortDramaTop homepage</a> ranks the apps, and <a href="https://shortdramatop.com/best/compare-short-drama-apps.html">the side-by-side comparison</a> puts them in one table.</p>
+
+  <footer>
+    <p>Maintained by the team at <a href="https://shortdramatop.com/">ShortDramaTop</a>. Data CC BY 4.0. App names and logos are trademarks of their owners; this is an independent project, not an official page of any app.</p>
+  </footer>
+</div>
+</body>
+</html>
